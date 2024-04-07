@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-04T22:33:03 IST" name="InetBankingV1" finished-at="2024-04-04T22:33:36 IST" duration-ms="33267">
+  <suite started-at="2024-04-07T19:55:49 IST" name="InetBankingV1" finished-at="2024-04-07T19:56:21 IST" duration-ms="32346">
     <groups>
     </groups>
-    <test started-at="2024-04-04T22:33:03 IST" name="BankingApp Test" finished-at="2024-04-04T22:33:36 IST" duration-ms="33267">
-      <class name="com.inetBanking.testCases.TC_AddNewCustomer_003">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetBanking.testCases.TC_AddNewCustomer_003@d737b89]" started-at="2024-04-04T22:33:03 IST" name="setUp" finished-at="2024-04-04T22:33:16 IST" duration-ms="12817" status="PASS">
+    <test started-at="2024-04-07T19:55:49 IST" name="BankingApp Test" finished-at="2024-04-07T19:56:21 IST" duration-ms="32346">
+      <class name="com.inetBanking.testCases.TC_LoginTest_001">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@48bb62]" started-at="2024-04-07T19:55:49 IST" name="setUp" finished-at="2024-04-07T19:56:02 IST" duration-ms="12780" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,48 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addNewCust()[pri:0, instance:com.inetBanking.testCases.TC_AddNewCustomer_003@d737b89]" started-at="2024-04-04T22:33:16 IST" name="addNewCust" finished-at="2024-04-04T22:33:35 IST" duration-ms="19850" status="PASS">
+        <test-method signature="loginTestTitle()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@48bb62]" started-at="2024-04-07T19:56:02 IST" name="loginTestTitle" finished-at="2024-04-07T19:56:10 IST" duration-ms="7918" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNewCust -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.inetBanking.testCases.TC_AddNewCustomer_003@d737b89]" started-at="2024-04-04T22:33:36 IST" name="teardown" finished-at="2024-04-04T22:33:36 IST" duration-ms="281" status="PASS">
+        </test-method> <!-- loginTestTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@48bb62]" started-at="2024-04-07T19:56:10 IST" name="teardown" finished-at="2024-04-07T19:56:10 IST" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.inetBanking.testCases.TC_AddNewCustomer_003 -->
+      </class> <!-- com.inetBanking.testCases.TC_LoginTest_001 -->
+      <class name="com.inetBanking.testCases.TC_LoginTestDDT_002">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetBanking.testCases.TC_LoginTestDDT_002@14028087]" started-at="2024-04-07T19:56:10 IST" name="setUp" finished-at="2024-04-07T19:56:12 IST" duration-ms="2064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.inetBanking.testCases.TC_LoginTestDDT_002@14028087]" started-at="2024-04-07T19:56:13 IST" name="loginTest" data-provider="LoginData" finished-at="2024-04-07T19:56:21 IST" duration-ms="7483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr562991]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vybEbyg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.inetBanking.testCases.TC_LoginTestDDT_002@14028087]" started-at="2024-04-07T19:56:21 IST" name="teardown" finished-at="2024-04-07T19:56:21 IST" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.inetBanking.testCases.TC_LoginTestDDT_002 -->
     </test> <!-- BankingApp Test -->
   </suite> <!-- InetBankingV1 -->
 </testng-results>
