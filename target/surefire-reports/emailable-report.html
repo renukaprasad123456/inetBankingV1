@@ -9,19 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">InetBankingV1</th></tr>
-<tr><td><a href="#t0">BankingApp Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">52,455</td><td></td><td></td></tr>
+<tr><td><a href="#t0">BankingApp Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">406,959</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">InetBankingV1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BankingApp Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.inetBanking.testCases.TC_AddNewCustomer_003</td><td><a href="#m0">addNewCust</a></td><td rowspan="1">1712240244181</td><td rowspan="1">19957</td></tr><tr><th colspan="4">BankingApp Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.inetBanking.testCases.TC_LoginTestDDT_002</td><td><a href="#m1">loginTest</a></td><td rowspan="1">1712240237162</td><td rowspan="1">4579</td></tr><tr class="passedodd"><td rowspan="1">com.inetBanking.testCases.TC_LoginTest_001</td><td><a href="#m2">loginTestTitle</a></td><td rowspan="1">1712240224381</td><td rowspan="1">2204</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">InetBankingV1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BankingApp Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.inetBanking.testCases.TC_EditCustomer_004</td><td><a href="#m0">editExistingCustomer</a></td><td rowspan="1">1718800661558</td><td rowspan="1">26009</td></tr><tr><th colspan="4">BankingApp Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.inetBanking.testCases.TC_AddNewCustomer_003</td><td><a href="#m1">addNewCust</a></td><td rowspan="1">1718800516559</td><td rowspan="1">97333</td></tr><tr class="passedodd"><td rowspan="1">com.inetBanking.testCases.TC_LoginTestDDT_002</td><td><a href="#m2">loginTest</a></td><td rowspan="1">1718800415960</td><td rowspan="1">46260</td></tr><tr class="passedeven"><td rowspan="1">com.inetBanking.testCases.TC_LoginTest_001</td><td><a href="#m3">loginTestTitle</a></td><td rowspan="1">1718800363989</td><td rowspan="1">9071</td></tr></tbody>
 </table>
-<h2>BankingApp Test</h2><h3 id="m0">com.inetBanking.testCases.TC_AddNewCustomer_003#addNewCust</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;name&apos;]&quot;}
-  (Session info: chrome=123.0.6312.88)
+<h2>BankingApp Test</h2><h3 id="m0">com.inetBanking.testCases.TC_EditCustomer_004#editExistingCustomer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;cusid&apos;]&quot;}
+  (Session info: chrome=126.0.6478.61)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e397fc6a9489dd32611a835b6e264d02, findElement {value=//input[@name=&apos;name&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.88, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52620}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52620/devtoo..., se:cdpVersion: 123.0.6312.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e397fc6a9489dd32611a835b6e264d02
+Command: [9b5e2eab6eff9b6f51335c214a1b6264, findElement {using=name, value=cusid}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 126.0.6478.62 (b2781ca4c383..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62229/devtoo..., se:cdpVersion: 126.0.6478.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b5e2eab6eff9b6f51335c214a1b6264
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -36,11 +36,12 @@ Session ID: e397fc6a9489dd32611a835b6e264d02
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
-	at com.inetBanking.pageObjects.AddNewCustomerPage.setCustomerName(AddNewCustomerPage.java:73)
-	at com.inetBanking.testCases.TC_AddNewCustomer_003.addNewCust(TC_AddNewCustomer_003.java:23)
+	at com.inetBanking.pageObjects.EditCustomerPage.sendCusId(EditCustomerPage.java:53)
+	at com.inetBanking.testCases.TC_EditCustomer_004.editExistingCustomer(TC_EditCustomer_004.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.inetBanking.testCases.TC_LoginTestDDT_002#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr562991</td><td>vybEbyg</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.inetBanking.testCases.TC_LoginTest_001#loginTestTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.inetBanking.testCases.TC_AddNewCustomer_003#addNewCust</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.inetBanking.testCases.TC_LoginTestDDT_002#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr577004</td><td>rYtUneb</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.inetBanking.testCases.TC_LoginTest_001#loginTestTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

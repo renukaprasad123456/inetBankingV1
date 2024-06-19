@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-InetBankingV1">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-InetBankingV1" title="com.inetBanking.testCases.TC_AddNewCustomer_003" class="method navigator-link" hash-for-method="addNewCust">addNewCust</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-InetBankingV1" title="com.inetBanking.testCases.TC_EditCustomer_004" class="method navigator-link" hash-for-method="editExistingCustomer">editExistingCustomer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-InetBankingV1 -->
@@ -117,7 +117,12 @@
                     <div class="method-list-content passed suite-InetBankingV1">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-InetBankingV1" title="com.inetBanking.testCases.TC_LoginTestDDT_002" class="method navigator-link" hash-for-method="loginTest(mngr562991, vybEbyg)">loginTest(mngr562991, vybEbyg)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-InetBankingV1" title="com.inetBanking.testCases.TC_AddNewCustomer_003" class="method navigator-link" hash-for-method="addNewCust">addNewCust</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-InetBankingV1" title="com.inetBanking.testCases.TC_LoginTestDDT_002" class="method navigator-link" hash-for-method="loginTest(mngr577004, rYtUneb)">loginTest(mngr577004, rYtUneb)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -140,23 +145,23 @@
           <div class="suite-InetBankingV1-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.inetBanking.testCases.TC_AddNewCustomer_003</span>
+              <span class="class-name">com.inetBanking.testCases.TC_EditCustomer_004</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addNewCust">
-                  </a> <!-- addNewCust -->
-                  <span class="method-name">addNewCust</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;name&apos;]&quot;}
-  (Session info: chrome=123.0.6312.88)
+                  <a name="editExistingCustomer">
+                  </a> <!-- editExistingCustomer -->
+                  <span class="method-name">editExistingCustomer</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;cusid&apos;]&quot;}
+  (Session info: chrome=126.0.6478.61)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e397fc6a9489dd32611a835b6e264d02, findElement {value=//input[@name=&apos;name&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.88, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52620}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52620/devtoo..., se:cdpVersion: 123.0.6312.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e397fc6a9489dd32611a835b6e264d02
+Command: [9b5e2eab6eff9b6f51335c214a1b6264, findElement {using=name, value=cusid}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 126.0.6478.62 (b2781ca4c383..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62229}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62229/devtoo..., se:cdpVersion: 126.0.6478.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b5e2eab6eff9b6f51335c214a1b6264
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -171,8 +176,8 @@ Session ID: e397fc6a9489dd32611a835b6e264d02
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
-	at com.inetBanking.pageObjects.AddNewCustomerPage.setCustomerName(AddNewCustomerPage.java:73)
-	at com.inetBanking.testCases.TC_AddNewCustomer_003.addNewCust(TC_AddNewCustomer_003.java:23)
+	at com.inetBanking.pageObjects.EditCustomerPage.sendCusId(EditCustomerPage.java:53)
+	at com.inetBanking.testCases.TC_EditCustomer_004.editExistingCustomer(TC_EditCustomer_004.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 ... Removed 35 stack frames
 </div> <!-- stack-trace -->
@@ -183,15 +188,30 @@ Session ID: e397fc6a9489dd32611a835b6e264d02
           <div class="suite-InetBankingV1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.inetBanking.testCases.TC_AddNewCustomer_003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewCust">
+                  </a> <!-- addNewCust -->
+                  <span class="method-name">addNewCust</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-InetBankingV1-class-passed -->
+          <div class="suite-InetBankingV1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.inetBanking.testCases.TC_LoginTestDDT_002</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(mngr562991, vybEbyg)">
-                  </a> <!-- loginTest(mngr562991, vybEbyg) -->
+                  <a name="loginTest(mngr577004, rYtUneb)">
+                  </a> <!-- loginTest(mngr577004, rYtUneb) -->
                   <span class="method-name">loginTest</span>
-                  <span class="parameters">(mngr562991,vybEbyg)</span>
+                  <span class="parameters">(mngr577004,rYtUneb)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -230,6 +250,7 @@ Session ID: e397fc6a9489dd32611a835b6e264d02
       &lt;class name=&quot;com.inetBanking.testCases.TC_LoginTest_001&quot;/&gt;
       &lt;class name=&quot;com.inetBanking.testCases.TC_LoginTestDDT_002&quot;/&gt;
       &lt;class name=&quot;com.inetBanking.testCases.TC_AddNewCustomer_003&quot;/&gt;
+      &lt;class name=&quot;com.inetBanking.testCases.TC_EditCustomer_004&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BankingApp Test --&gt;
 &lt;/suite&gt; &lt;!-- InetBankingV1 --&gt;
@@ -243,7 +264,7 @@ Session ID: e397fc6a9489dd32611a835b6e264d02
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">BankingApp Test (3 classes)</span>
+                <span class="test-name">BankingApp Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -269,24 +290,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addNewCust')
 data.setCell(0, 2, 'com.inetBanking.testCases.TC_AddNewCustomer_003')
-data.setCell(0, 3, 19957);
+data.setCell(0, 3, 97333);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.inetBanking.testCases.TC_LoginTestDDT_002')
-data.setCell(1, 3, 4579);
+data.setCell(1, 3, 46260);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTestTitle')
-data.setCell(2, 2, 'com.inetBanking.testCases.TC_LoginTest_001')
-data.setCell(2, 3, 2204);
+data.setCell(2, 1, 'editExistingCustomer')
+data.setCell(2, 2, 'com.inetBanking.testCases.TC_EditCustomer_004')
+data.setCell(2, 3, 26009);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginTestTitle')
+data.setCell(3, 2, 'com.inetBanking.testCases.TC_LoginTest_001')
+data.setCell(3, 3, 9071);
 window.suiteTableData['InetBankingV1']= { tableData: data, tableDiv: 'times-div-InetBankingV1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-InetBankingV1">
               </div> <!-- times-div-InetBankingV1 -->
             </div> <!-- times-div -->
@@ -319,43 +344,58 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginTestTitle</span>
-                <span class="method-start">12063 ms</span>
+                <span class="method-start">82583 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">14286 ms</span>
+                <span class="method-start">91665 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.inetBanking.testCases.TC_LoginTestDDT_002</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">14508 ms</span>
+                <span class="method-start">91863 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">loginTest(mngr562991, vybEbyg)</span>
-                <span class="method-start">24844 ms</span>
+                <span class="method-name">loginTest(mngr577004, rYtUneb)</span>
+                <span class="method-start">134554 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">29426 ms</span>
+                <span class="method-start">180817 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.inetBanking.testCases.TC_AddNewCustomer_003</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">29600 ms</span>
+                <span class="method-start">180985 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addNewCust</span>
+                <span class="method-start">235153 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">332486 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.inetBanking.testCases.TC_EditCustomer_004</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">332707 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">addNewCust</span>
-                <span class="method-start">31863 ms</span>
+                <span class="method-name">editExistingCustomer</span>
+                <span class="method-start">380152 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">51828 ms</span>
+                <span class="method-start">406173 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
