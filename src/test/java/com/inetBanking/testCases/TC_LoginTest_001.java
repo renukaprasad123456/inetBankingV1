@@ -1,4 +1,5 @@
 package com.inetBanking.testCases;
+
 import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,12 +17,13 @@ public class TC_LoginTest_001 extends BaseClass {
 
 		lp.setName(userName);
 		logger.info("username is entered");
-        lp.setPassword(pwd);
-        logger.info("password is entered");
-        lp.clickOnLogin();
-        logger.info("login is successfull.....");
+		lp.setPassword(pwd);
+		logger.info("password is entered");
+		lp.clickOnLogin();
+		logger.info("login is successfull.....");
 
 		if (driver.getTitle().equals("Guru99 Bank Manager HomePage")) {
+			logger.info("Expected title recieved");
 			Assert.assertTrue(true);
 
 		}
