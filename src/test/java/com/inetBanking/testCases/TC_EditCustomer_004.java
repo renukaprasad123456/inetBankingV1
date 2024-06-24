@@ -1,19 +1,26 @@
 package com.inetBanking.testCases;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.testng.annotations.Test;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import com.inetBanking.pageObjects.EditCustomerPage;
 import com.inetBanking.pageObjects.LoginPage;
 
 @Test
 public class TC_EditCustomer_004 extends BaseClass {
+	private static Logger logger = LogManager.getLogger(TC_EditCustomer_004.class.getName());
 
 	public void editExistingCustomer() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		lp.setName(userName);
+		logger.info("User name is entered");
 		lp.setPassword(pwd);
+		logger.info("Password is entered");
 		lp.clickOnLogin();
+		logger.info("Login is successfull...");
 		Thread.sleep(3000);
 
 		EditCustomerPage ecp = new EditCustomerPage(driver);
@@ -35,6 +42,7 @@ public class TC_EditCustomer_004 extends BaseClass {
 		driver.switchTo().defaultContent();
 
 		if (alertMess.equals("No Changes made to Customer records")) {
+			logger.info("Edit customer successfull...");
 			Assert.assertTrue(true);
 		}
 

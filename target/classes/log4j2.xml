@@ -8,7 +8,7 @@
 			<PatternLayout>
 				<pattern>%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</pattern>
 			</PatternLayout>
-			<SizeBasedTriggeringPolicy size="1 KB" />
+			<SizeBasedTriggeringPolicy size="10 KB" />
 		</RollingFile>
 		<Console name="Console" target="SYSTEM_OUT">
 			<PatternLayout pattern="%d{HH:mm:ss:sss} [%t] %-5level %logger{36} - %msg%n" />
