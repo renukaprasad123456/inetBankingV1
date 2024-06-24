@@ -3,11 +3,8 @@ package com.inetBanking.testCases;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -19,9 +16,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-
 import com.inetBanking.utilities.ReadConfig;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
@@ -40,7 +35,7 @@ public class BaseClass {
 	public void setUp(String br) {
 
 		if (br.equals("chrome")) {
-			ChromeOptions op=new ChromeOptions();
+			ChromeOptions op = new ChromeOptions();
 			op.addArguments("--disable-notifications");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(op);

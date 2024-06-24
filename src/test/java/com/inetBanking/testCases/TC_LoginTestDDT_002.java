@@ -1,9 +1,9 @@
 package com.inetBanking.testCases;
 
 import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
-
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.NoAlertPresentException;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -13,12 +13,17 @@ import com.inetBanking.utilities.XLUtility;
 
 public class TC_LoginTestDDT_002 extends BaseClass {
 
+	Logger logger = LogManager.getLogger(TC_LoginTestDDT_002.class.getName());
+
 	@Test(dataProvider = "LoginData")
 	public void loginTest(String UserName, String Password) throws IOException {
 		LoginPage lp = new LoginPage(driver);
 		lp.setName(UserName);
+		logger.info("Username is entered");
 		lp.setPassword(Password);
+		logger.info("Password is entered");
 		lp.clickOnLogin();
+		logger.info("login is successfull...");
 
 		if (isAlertpresent() == true) {
 			driver.switchTo().alert().accept();
@@ -50,9 +55,9 @@ public class TC_LoginTestDDT_002 extends BaseClass {
 	public String[][] getData() throws IOException {
 		String path = System.getProperty("user.dir") + "/src/test/java/com/inetBanking/testData/LoginData2.xlsx";
 		int rowCount = XLUtility.getRowCount(path, "Sheet1");
-		System.out.println("rowCount is:"+rowCount);
+		System.out.println("rowCount is:" + rowCount);
 		int colCount = XLUtility.getCellCount(path, "Sheet1", 1);
-		System.out.println("colCount is:"+colCount);
+		System.out.println("colCount is:" + colCount);
 
 		String loginData[][] = new String[rowCount][colCount];
 
