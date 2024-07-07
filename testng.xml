@@ -9,12 +9,6 @@
 	<parameter name="browser" value="chrome"></parameter>
 
 	<test thread-count="5" name="BankingApp Test">
-		<groups>
-			<run>
-				<include name="Sanity"></include>
-            </run>
-
-		</groups>
 		<classes>
 			<class name="com.inetBanking.testCases.TC_LoginTest_001" />
 			<class name="com.inetBanking.testCases.TC_LoginTestDDT_002" />
