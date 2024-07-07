@@ -16,7 +16,7 @@ public class TC_AddNewCustomer_003 extends BaseClass {
 
 	private static Logger logger = LogManager.getLogger(TC_AddNewCustomer_003.class.getName());
 
-	@Test
+	@Test(groups= {"Regression"})
 	public void addNewCust() throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
 		lp.setName(userName);

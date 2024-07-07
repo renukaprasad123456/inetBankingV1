@@ -15,7 +15,7 @@ public class TC_LoginTestDDT_002 extends BaseClass {
 
 	Logger logger = LogManager.getLogger(TC_LoginTestDDT_002.class.getName());
 
-	@Test(dataProvider = "LoginData")
+	@Test(dataProvider = "LoginData",groups= {"Sanity"})
 	public void loginTest(String UserName, String Password) throws IOException {
 		LoginPage lp = new LoginPage(driver);
 		lp.setName(UserName);

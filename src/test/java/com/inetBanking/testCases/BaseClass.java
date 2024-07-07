@@ -35,10 +35,11 @@ public class BaseClass {
 	public void setUp(String br) {
 
 		if (br.equals("chrome")) {
-			ChromeOptions op = new ChromeOptions();
-			op.addArguments("--disable-notifications");
+			ChromeOptions options = new ChromeOptions();
+			File f = new File("C:\\RP_Installed_Software\\CRX Files\\uBlock-Origin.crx");
+			options.addExtensions(f);
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(op);
+			driver = new ChromeDriver(options);
 		} else if (br.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();

@@ -11,7 +11,7 @@ public class TC_LoginTest_001 extends BaseClass {
 
 	private static Logger logger = LogManager.getLogger(TC_LoginTest_001.class.getName());
 
-	@Test
+	@Test(groups = { "Sanity" })
 	public void loginTestTitle() throws IOException {
 		LoginPage lp = new LoginPage(driver);
 

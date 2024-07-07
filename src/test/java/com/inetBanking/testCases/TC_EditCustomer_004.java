@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 import com.inetBanking.pageObjects.EditCustomerPage;
 import com.inetBanking.pageObjects.LoginPage;
 
-@Test
+@Test(groups= {"Regression"})
 public class TC_EditCustomer_004 extends BaseClass {
 	private static Logger logger = LogManager.getLogger(TC_EditCustomer_004.class.getName());
 
