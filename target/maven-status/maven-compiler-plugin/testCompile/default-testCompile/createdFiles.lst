@@ -1,11 +1,13 @@
 com\inetBanking\testCases\TC_LoginTest_001.class
-com\inetBanking\utilities\ReadConfig.class
 com\inetBanking\pageObjects\AddNewCustomerPage.class
+com\inetBanking\pageObjects\Log4jExam22.class
+com\inetBanking\testCases\TC_AddNewCustomer_003.class
+com\inetBanking\pageObjects\EditCustomerPage.class
+com\inetBanking\testCases\BaseClass.class
+com\inetBanking\utilities\ReadConfig.class
 com\inetBanking\utilities\XLUtility.class
 com\inetBanking\utilities\Reporting.class
 com\inetBanking\testCases\TC_LoginTestDDT_002.class
-com\inetBanking\testCases\TC_AddNewCustomer_003.class
-com\inetBanking\pageObjects\EditCustomerPage.class
 com\inetBanking\testCases\TC_EditCustomer_004.class
 com\inetBanking\pageObjects\LoginPage.class
-com\inetBanking\testCases\BaseClass.class
+com\inetBanking\testCases\Log4jExam.class

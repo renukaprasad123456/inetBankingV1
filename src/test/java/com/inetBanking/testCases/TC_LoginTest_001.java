@@ -6,12 +6,13 @@ import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.testng.annotations.Test;
 import com.inetBanking.pageObjects.LoginPage;
+import com.inetBanking.utilities.MyRetryAnalyzer;
 
 public class TC_LoginTest_001 extends BaseClass {
 
 	private static Logger logger = LogManager.getLogger(TC_LoginTest_001.class.getName());
-
-	@Test(groups = { "" })
+    
+	@Test
 	public void loginTestTitle() throws IOException {
 		LoginPage lp = new LoginPage(driver);
 
@@ -25,7 +26,6 @@ public class TC_LoginTest_001 extends BaseClass {
 		if (driver.getTitle().equals("Guru99 Bank Manager HomePage")) {
 			logger.info("Expected title recieved");
 			Assert.assertTrue(true);
-
 		}
 
 		else {

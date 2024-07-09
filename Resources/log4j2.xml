@@ -19,7 +19,7 @@
 			<AppenderRef ref="Console" />
 			<AppenderRef ref="file" />
 		</Logger>
-		<Root level="fatal">
+		<Root level="trace">
 			<AppenderRef ref="Console" />
 			<AppenderRef ref="file" />
 		</Root>
