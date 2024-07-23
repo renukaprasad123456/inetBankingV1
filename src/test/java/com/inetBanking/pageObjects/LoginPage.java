@@ -1,17 +1,18 @@
 package com.inetBanking.pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPage extends BasePage {
 
-	WebDriver ldriver;
+	WebDriver driver;
 
-	public LoginPage(WebDriver rdriver) {
-		ldriver = rdriver;
-		PageFactory.initElements(rdriver, this);
+	public LoginPage(WebDriver driver) {
+		super(driver);
+		PageFactory.initElements(driver, this);
 
 	}
 
@@ -23,8 +24,8 @@ public class LoginPage {
 
 	@FindBy(css = "input[name='btnLogin']")
 	WebElement logButton;
-	
-	@FindBy(xpath="//a[contains(text(),'Log out')]")
+
+	@FindBy(xpath = "//a[contains(text(),'Log out')]")
 	WebElement logOutButton;
 
 	public void setName(String name) {
@@ -38,9 +39,8 @@ public class LoginPage {
 	public void clickOnLogin() {
 		logButton.click();
 	}
-	
-	public void clickOnLogOutButton()
-	{
+
+	public void clickOnLogOutButton() {
 		logOutButton.click();
 	}
 
